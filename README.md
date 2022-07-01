@@ -9,10 +9,12 @@ Embedded transactional database in the form of a key-value store
 [
   {
     "id": "Unix time stamp + UID { \"type\": \"integer\" }",
-    "logType": "{ \"type\": \"string\" }",
+    "logType": "Log type { \"type\": \"string\" }",
     "pokeAi": "Poke AI .jpg private URL { \"type\": \"string\" }",
     "fuzzyHash": "SSDEEP { \"type\": \"string\" }",
     "author": "Author { \"type\": \"string\" }",
+    "synthetic": "GAN generated { \"type\": \"boolean\" }",
+    "anonymized": "Anonymized { \"type\": \"boolean\" }",
     "lines": "Number of log lines { \"type\": \"integer\" }",
     "cat": "Category { \"type\": \"string\" }",
     "observer": {
