@@ -5,7 +5,7 @@ Welcome to the LOGFORCE docs — This is a draft of the core concepts available 
 ### Initial architecture
 Embedded transactional database in the form of a key-value store
 ### Data model and Schema
-
+```json
 [
   {
     "id": "Unix time stamp + UID { \"type\": \"integer\" }",
@@ -34,3 +34,4 @@ Embedded transactional database in the form of a key-value store
     }
   }
 ]
+```
