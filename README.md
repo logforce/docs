@@ -24,7 +24,7 @@ Embedded transactional database in the form of a key-value store
           "frameworks": {
             "framework": {
               "frameworkName": "Cybersecurity Framework { \"type\": \"string\" }",
-              "ttpID": "Tactic, Technique or Procedures ID { \"type\": \"string\" }"
+              "ttpId": "Tactic, Technique or Procedures ID { \"type\": \"string\" }"
             }
           }
         },
