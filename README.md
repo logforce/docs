@@ -23,14 +23,15 @@ Embedded transactional database in the form of a key-value store
         "mapping": {
           "frameworks": {
             "framework": {
-              "frameworkName": "Cybersecurity Framework { \"type\": \"string\" }",
-              "ttpId": "Tactic, Technique or Procedures ID { \"type\": \"string\" }"
+              "frameworkName": "Framework { \"type\": \"string\" }",
+              "mappingId": "Framework item(s) ID(s) { \"type\": \"string\" }"
             }
           }
         },
         "references": {
           "reference": "KB URL { \"type\": \"string\" }",
-          
+        "correlations": {
+          "correlation": "Query { \"type\": \"string\" }",
         }
       }
     }
