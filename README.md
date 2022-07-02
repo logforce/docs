@@ -29,9 +29,10 @@ Embedded transactional database in the form of a key-value store
           }
         },
         "references": {
-          "reference": "KB URL { \"type\": \"string\" }",
+          "reference": "KB URL { \"type\": \"string\" }"
+        },
         "correlations": {
-          "correlation": "Query { \"type\": \"string\" }",
+          "correlation": "Query { \"type\": \"string\" }"
         }
       }
     }
