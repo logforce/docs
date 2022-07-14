@@ -31,12 +31,17 @@ Embedded transactional database in the form of a key-value store
       references:
         reference: 'KB URL { "type": "string" }'
       correlations:
-        correlation: 'Query { "type": "string" }'
+        query: 'Query { "type": "string" }'
+        dimension: 'poke AI dimension URL { "type": "string" }'
   log:
     lines: 'Log lines { "type": "string" }'
   origin:
-    originalLocation: 'Log original location { "type": "string" }'
-
+    originalLocation: 'Original log location { "type": "string" }'
+    originalFormat: 'Original log format { "type": "string" }'
+  destination:
+    converted: 'Converted before ingestion { "type": "boolean" }'
+    convertedFormat: 'After ingestion log format { "type": "string" }'
+    output: 'Output destination { "type": "string" }'
 ```
 
 #### JSON
@@ -70,7 +75,8 @@ Embedded transactional database in the form of a key-value store
           "reference": "KB URL { \"type\": \"string\" }"
         },
         "correlations": {
-          "correlation": "Query { \"type\": \"string\" }"
+          "query": "Query { \"type\": \"string\" }",
+          "dimension": "poke AI dimension URL { \"type\": \"string\" }"
         }
       }
     },
@@ -78,7 +84,13 @@ Embedded transactional database in the form of a key-value store
       "lines": "Log lines { \"type\": \"string\" }"
     },
     "origin": {
-      "originalLocation": "Log original location { \"type\": \"string\" }"
+      "originalLocation": "Original log location { \"type\": \"string\" }",
+      "originalFormat": "Original log format { \"type\": \"string\" }"
+    },
+    "destination": {
+      "converted": "Converted before ingestion { \"type\": \"boolean\" }",
+      "convertedFormat": "After ingestion log format { \"type\": \"string\" }",
+      "output": "Output destination { \"type\": \"string\" }"
     }
   }
 ]
